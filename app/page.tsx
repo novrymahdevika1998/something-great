@@ -78,8 +78,8 @@ export default function Home() {
       );
 
       if (process.env.NODE_ENV === "development") {
-        new GSDevTools({ animation: tl });
-      })
+        new GSDevTools.create({ animation: tl });
+      }
     },
     {
       scope: containerRef,
