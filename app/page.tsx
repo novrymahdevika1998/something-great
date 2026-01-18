@@ -77,7 +77,9 @@ export default function Home() {
         1
       );
 
-      GSDevTools.create({ animation: tl})
+      if (process.env.NODE_ENV === "development") {
+        new GSDevTools({ animation: tl });
+      })
     },
     {
       scope: containerRef,
