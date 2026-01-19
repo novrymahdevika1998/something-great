@@ -78,7 +78,7 @@ export default function Home() {
       );
 
       if (process.env.NODE_ENV === "development") {
-        new GSDevTools.create({ animation: tl });
+        GSDevTools.create({ animation: tl });
       }
     },
     {
